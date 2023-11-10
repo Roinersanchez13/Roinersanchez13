@@ -1,0 +1,153 @@
+*{
+    font-family:'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primario:#fffcf9;
+    --color-secundario:#3772ff;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 80px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    color:var(--color-primario);
+    cursor: pointer;
+}
+.logo span{
+    color: beige;
+}
+.navegacion a{
+    font-size: 1.2em;
+    color: var(--color-primario);
+    text-decoration: none;
+    margin-right: 40px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.navegacion a:hover{
+    color: var(--color-secundario)
+}
+
+.btn_hablar{
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 35px ;
+    background-color:var(--color-secundario);
+    border-radius: 10px;
+    border: 2px solid var(--color-secundario);
+    font-weight: 600;
+    transition: .3s;
+}
+ 
+.btn_hablar:hover{
+    color: var(--color-secundario);
+    background: transparent;
+}
+
+
+.inicio{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background:url(assets/th.jpeg);
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 10px 60px;
+
+}
+
+.contenido{
+    max-width: 600px;
+    color:var(--color-primario)
+}
+.contenido h2{
+    font-size: 3em;
+}
+.contenido h2 span{
+    color: aquamarine;
+}
+
+.contenido h4{
+    font-size: 2 em;
+}
+
+.contenido p{
+    padding: 10px 0 40px 0;
+}
+.foto{
+   
+    display: flex;
+    justify-content: first baseline;
+    justify-content: center; 
+    width: 300px;
+    margin: 0%; 
+    height: 300px; 
+    border: 1px solid;
+}
+
+
+.mi_foto{
+    width: auto; 
+    height: auto;
+            
+        }
+
+.btn-grupo a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+    background: var(--color-secundario);
+    border: 2px solid --color-secundario;
+    transition: .3s;
+
+}
+
+.btn-grupo a:hover:nth-child(1){
+    background-color:transparent ;
+    color: var(--color-secundario);
+}
+
+.btn-grupo a:nth-child(2){
+    color: var(--color-secundario);
+    background: transparent;
+    margin-left: 30px;
+    padding: 10px 30px;
+}
+
+.btn-grupo a:hover:nth-child(2){
+    background-color: var(--color-secundario);
+    color: #fff;
+}
+
+.icono_redes{
+    position: absolute;
+    bottom: 50px;
+}
+
+.icono_redes a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: var(--color-secundario);
+    border-radius: 50%;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #fff;
+    outline: 2px solid --color-secundario;
+    transition: .3s;
+}
